@@ -116,3 +116,6 @@ func New_Honda_CRX() *Honda_CRX {
   return c
 }
 
+func (_ Honda_CRX) Little() string {
+  return "bitty"
+}

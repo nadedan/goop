@@ -34,6 +34,11 @@ func main() {
     fmt.Println(car.Model())
     fmt.Println(car.Price())
     fmt.Println(car.Range())
+
+    crx, ok := car.(*cars.Honda_CRX)
+    if ok {
+      fmt.Println(crx.Little())
+    }
   }
 
   fmt.Printf("\n Adding a car to my garage\n")
@@ -43,5 +48,10 @@ func main() {
     fmt.Println(car.Model())
     fmt.Println(car.Price())
     fmt.Println(car.Range())
+
+    crx, ok := car.(*cars.Honda_CRX)
+    if ok {
+      fmt.Println(crx.Little())
+    }
   }
 }
